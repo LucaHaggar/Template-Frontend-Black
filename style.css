@@ -1,0 +1,173 @@
+.bg-custom {
+  background-color: black;
+}
+
+/* custom nav */
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  border-bottom: 1px solid white;
+}
+
+* {
+  font-family: "Orbitron", sans-serif;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+body {
+  background-color: black;
+}
+
+:root {
+  --bg-w: white;
+  --bg-b: #2b9df4;
+  --bg-bk: black;
+}
+
+/* fine custom nav */
+
+/* custom header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 65%), rgba(0, 0, 0, 65%)),
+    url(./media/moon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--bg-w);
+  background-position: center;
+}
+
+.freccia {
+  color: var(--bg-b);
+}
+
+.linea {
+  height: 2px;
+  width: 100%;
+  background-color: var(--bg-b);
+}
+/* fine custom header */
+
+/* inizio custom section img mezza luna */
+
+h4 {
+  color: var(--bg-b);
+}
+/* fine custom section mezza luna */
+
+/* inizio custom section icone */
+
+.icone-cust {
+  color: var(--bg-b);
+}
+
+.border-bottom-custom {
+  border-bottom: 1px solid;
+  color: var(--bg-b);
+}
+/* fine custom section icone */
+
+/* inizio custom section missile */
+.cust-img {
+  height: 90vh;
+}
+
+.sezione-contenitore {
+  margin-top: 200px;
+}
+/* fine section custom missile */
+
+/* inizio section custom bottoni */
+.button-custom {
+  height: 50px;
+  width: 130px;
+  padding: 10px;
+  background-color: black;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.top-left {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid var(--bg-b);
+  border-left: 2px solid var(--bg-b);
+}
+
+.top-right {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 2px solid var(--bg-b);
+  border-right: 2px solid var(--bg-b);
+}
+
+.bottom-left {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid var(--bg-b);
+  border-left: 2px solid var(--bg-b);
+}
+
+.bottom-right {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid var(--bg-b);
+  border-right: 2px solid var(--bg-b);
+}
+/* fine section custom bottoni */
+
+/* inizio custom section finale */
+
+.pallino {
+  position: relative;
+}
+
+.custom-section-end {
+  height: 10vh;
+}
+
+.pallino::after {
+  content: "";
+  height: 3px;
+  width: 600px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid var(--bg-b);
+  background-color: linear-gradient(rgba(#020024), rgba(#090979) rgba(#00d4ff));
+  top: 0%;
+  left: -300px;
+}
+/* fine custom section finale */
+
+@media screen and (max-width: 600px) {
+  .pallino::after {
+    width: 300px;
+    left: -150px;
+  }
+}
